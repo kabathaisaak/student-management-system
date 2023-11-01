@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link rel="icon"  href="assets/img/gallery/restaurant.png">
+  <title>PAPA RESTAURANTS  AND GARDENS Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    {%  load static %}
+
+  <!-- Favicons -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" { % static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href=" { % static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Sep 20 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top line-height-lg">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center text-bg-secondary ">
+        <i class="bi bi-phone d-flex align-items-center text-primary" ><span class="text-primary lh-lg">+254 792124905 </span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4 text-warning"><span class="text-warning lh-lg"> Mon-Sat: 11AM - 23PM</span></i>
+         <i class="bi bi-clock d-flex align-items-center ms-4 text-success"><span class="text-danger lh-lg"> sun: 11AM - 3PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0 "><a href="index.html" class="text-danger">PAPA RESTAURANTS AND GARDENS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active btn btn-outline-danger bg-primary p-3" href="#hero">Home</a></li>
+                  <li><a href="{% url 'details' %}" class="text-success">details</a></li>
+          <li><a class="nav-link scrollto btn btn-outline-primary bg-warning p-3" href="#about">About</a></li>
+          <li><a class="nav-link scrollto  btn btn-outline-success bg-light p-3 text-dark" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto btn btn-outline-secondary p-3 bg-success" href="#specials">Specials</a></li>
+          <li><a class="nav-link scrollto btn btn-outline-primary  p-3 bg-dark" href="#events">Events</a></li>
+          <li><a class="nav-link scrollto btn btn-outline-warning p-3  bg-info" href="#chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto  btn btn-outline-success p-3 bg-danger" href="#gallery" >Gallery</a></li>
+          <li><a class="text-danger  btn btn-outline-success bg-light p-3 text-dark">contacts</a></li>
+          <li class="dropdown bg-success btn btn-outline-warning  p-3 text-info"><a href="#" ><span>Additional info</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" class="bg-primary text-danger">safe space</a></li>
+              <li class="dropdown"><a href="#"><span>background info</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#" class="bg-warning">book a space</a></li>
+                  <li><a href="#" class="bg-danger">book a private chef</a></li>
+                  <li><a href="#" class="bg-success">compliment</a></li>
+                  <li><a href="#" class="bg-secondary">complain</a></li>
+                  <li><a href="#" class="bg-primary">ratings and review</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="text-primary">our motivation</a></li>
+              <li><a href="#" class="text-danger">our vision</a></li>
+              <li><a href="#" class="text-success">our mission</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+      <a href="#book-a-table" class="book-a-table-btn text-info btn btn-outline-secondary scrollto d-none d-lg-flex">Book a table</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="text-danger">Welcome to <span class="text-info">PAPA RESTAURANTS AND GARDENS</span></h1>
+          <h2 class="text-info">WHERE VALUE OF YOUR MONEY,MEETS THE QUALITY YOU DESERVE</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto text-success">Our Menu</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto text-primary">Book a Table</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://youtu.be/p4QqMKe3rwY?si=RN-0hX04DqntX_Xc" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="{% static 'assets/css/style.css' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3 class=" text-success">Pleasures are to be enjoyed as if they are worthy and provided, almost as if they were bodily pleasures.</h3>
+
+            <p class="text-primary">
+             Your presence at this restaurant is highly appreciated and felt. We wish you the best as you prepare to intaract,realize the dream and create memories at this worthy home away from home
+            </p>
+            <p class="text-danger">
+              Fazaa restaurants is a place where you can hold meetings,birthday parties,baby showers,funearal aarngements and all sorts of social interaction that may occour on yoour way.
+              We are available to offer outside catering and also door to door delivery services. For reservations visit our contacts page to book a space.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h1 class=" bg-warning text-danger ">Why Us</h1>
+          <p class="bg-success text-info">Why Choose Our Restaurant</p>
+        </div>
+
+        <div class="row bg-warning">
+
+          <div class="col-lg-4 bg-danger">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4 class="text-info">Quality services</h4>
+              <p class="text-primary">Services offered at our restaurant are ensured that are of high quality and meets the customer expectations.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0 bg-danger">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4 class="text-info">Trusted and recognized at a global position</h4>
+              <p class="text-primary">papa restaurant are trusted  and recognized at a global position hence the services and care offerd here is of its own kind</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0 bg-danger">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4 class="text-info"> Stardard Facilities</h4>
+              <p class="text-danger">Our facilities are equiped with the latest technologies and art facilities that offers comfort and comfortablility during your stay</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h1 class="text-bg-secondary text-info">Menu</h1>
+          <p class="bg-info text-danger">Check Our Tasty Menu</p>
+        </div>
+
+        <div class="row bg-danger" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active  text-info">All</li>
+              <li data-filter=".filter-starters" class="text-info btn-outline-danger">Starters</li>
+              <li data-filter=".filter-salads" class="text-info btn-outline-secondary">Salads</li>
+              <li data-filter=".filter-specialty" class="text-info btn-outline-primary">Specialty</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'assets/img/menu/lobster-bisque.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>ksh 595</span>
+            </div>
+            <div class="menu-ingredients">
+              lobster with fried chicks and smached potatoes
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'assets/img/menu/bread-barrel.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bread Barrel</a><span>ksh 695</span>
+            </div>
+            <div class="menu-ingredients">
+              bread with pasturirised milk and a roasted maize
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'assets/img/menu/cake.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Crab Cake</a><span>ksh 795</span>
+            </div>
+            <div class="menu-ingredients">
+              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'assets/img/menu/caesar.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Caesar Selections</a><span> ksh 895</span>
+            </div>
+            <div class="menu-ingredients">
+              caesar served with cold water and fried veges
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'assets/img/menu/tuscan-grilled.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tuscan Grilled</a><span>ksh 995</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'assets/img/menu/mozzarella.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mozzarella Stick</a><span> ksh 495</span>
+            </div>
+            <div class="menu-ingredients">
+             fried bananas with roasted chicken wings and salad
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'assets/img/menu/greek-salad.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Greek Salad</a><span>ksh 995</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'assets/img/menu/spinach-salad.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Spinach Salad</a><span>ksh 995</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'assets/img/menu/lobster-roll.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Roll</a><span> ksh 1295</span>
+            </div>
+            <div class="menu-ingredients">
+              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h1 class="text-info">Specials</h1>
+          <p class="bg-danger">Check Our Specials</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Fermented milk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">kienyeji(vegetables)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Chicken wings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">githana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">roasted bananas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h1 class="text-danger lh-lg"> why special meals?</h1>
+                    <p class="fst-italic text-info"> This ensures special customer preferences and tastes are available at any particular moment you may want them </p>
+                    <p class="fst-italic text-info"> Book with us for your special meals in order to enjoy high quality tastes </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-1.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Et blanditiis nemo veritatis excepturi</h3>
+                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-2.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Prevents easy, for the person who hates, nor do I reveal.</h3>
+                    <p class="fst-italic">They delight in that which. Hatred is similar to that, I do not flee. Those who are not born are not said to be in pain. In the higher ones, he seeks to be carried out</p>
+                    <p>He hates the right things. He follows them, and he corrupts them. No one is to blame for the necessity of this. He himself is the least troublesome, and he hates it. They do not know her, let her escape. He offers and the pleasure is an option</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-3.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Escape the painful, laborious inventors, as we accuse laborious pain</h3>
+                    <p class="fst-italic">We discover all. It repels with the right pleasure, by the right chosen one.</p>
+                    <p>These follow one after the other freely in pleasure. Our very own, one may flee from obligations, whoever desires. He, in the greatest error, follows the body and more. The chosen ones, who reveal the truth, because of the laborer</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-4.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-5.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/specials-5.png' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 class="text-info">BIRTHDAY PARTIES</h3>
+                  <div class="price">
+                    <p><span> ksh 11,189</span></p>
+                  </div>
+                  <p class="fst-italic text-danger">
+                   This place will ensure that your birthday celebrations are well catered for and you will live to rmember it as one of the best due to its own unique kind
+                  </p>
+                  <ul>
+                    <li class="text-primary bg-success"><i class="bi bi-check-circled "></i>High security during the birthday celebrations</li>
+                    <li class="text-success bg-primary"><i class="bi bi-check-circled "></i> Availablity of special places to host your party in case of serene place away from the noise and disturbance</li>
+                    <li class="text-info bg-secondary"><i class="bi bi-check-circled "></i> cakes are provided at a subsidiced fee during the birthday party</li>
+                  </ul>
+                  <p class="text-info bg-danger">
+                   FEEL FREE TO COME AND PARTY WITH  PAPA Gardens and Restaurants AS WE CELEBRATE YOUR SPECIAL DAY
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/privateparty.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 class="text-info">PRIVATE PARTIES</h3>
+                  <div class="price">
+                    <p><span> ksh 9,000</span></p>
+                  </div>
+                  <p class="fst-italic text-info">
+                    COME HOST YOUR PRIVATE PARTY AS A GROUP,FAMILY,ORGANIZATION OR ASSOCIATES
+                  </p>
+                  <ul>
+                    <li  class="text-primary bg-success"><i class="bi bi-check-circled"></i> reservations are available for private parties</li>
+                    <li class="text-success bg-primary" ><i class="bi bi-check-circled"></i> custom decoration services are provided at a negoatitable fee</li>
+                    <li class="text-info bg-secondary"><i class="bi bi-check-circled"></i> outside chefs are allowed to private parties with payment of reasonable fee</li>
+                  </ul>
+                  <p class="text-danger bg-dark">
+                     FEEL FREE TO COME AND PARTY WITH  PAPA Gardens and Restaurants AS WE CELEBRATE YOUR SPECIAL EVENTS
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/customparty.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3 class="text-info">CUSTOM PARTIES</h3>
+                  <div class="price">
+                    <p><span> ksh 8990</span></p>
+                  </div>
+                  <p class="fst-italic text-danger">
+                        COME HOST YOUR CUSTOM PARTY AS A GROUP,FAMILY,ORGANIZATION OR ASSOCIATES
+                  </p>
+                  <ul>
+                   <li  class="text-primary bg-success"><i class="bi bi-check-circled"></i> reservations are available for private parties</li>
+                    <li class="text-info bg-success" ><i class="bi bi-check-circled"></i> custom decoration services are provided at a negoatitable fee</li>
+                    <li class="text-info bg-secondary"><i class="bi bi-check-circled"></i> outside chefs are allowed to private parties with payment of reasonable fee</li>
+                  </ul>
+                  <p class="fst-italic text-danger">
+                      COME HOST YOUR CUSTOM PARTY AS A GROUP,FAMILY,ORGANIZATION OR ASSOCIATES
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title ">
+          <h2 class="text-danger">Reservation</h2>
+          <p class="text-danger">Book a Table</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Book a Table</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I just had to take a moment to express my appreciation for the fantastic service provided by your hotel. The attention to detail, the friendliness of the staff, and the overall experience surpassed my expectations. The clean and well-appointed rooms, the delectable cuisine, and the prompt room service truly made my stay exceptional. I'll be sure to return and recommend your establishment to anyone seeking a superb hotel experience
+                </p>
+                <img src="{% static 'assets/img/testimonials/isaac.jpg' %}" class="testimonial-img" alt="">
+                <h3 class="text-info">kabatha</h3>
+                <h4 class="text-danger">Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Your team's commitment to excellence shines through, and I can't thank you enough for making my stay so pleasant.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/isaac2.jpg' %}" class="testimonial-img" alt="">
+                <h3 class="text-info">Isaac</h3>
+                <h4 class="text-danger">Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I felt compelled to write and commend your hotel for the exceptional level of service I received during my recent visit. Every aspect of my stay, from the warm welcome at check-in to the delectable dining options and the swift response to any requests, was nothing short of outstanding.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3 class="text-info">Makumbi</h3>
+                <h4 class="text-danger">Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I wanted to extend my gratitude for the outstanding service I experienced at your hotel. The staff's warmth and dedication to ensuring a comfortable and enjoyable stay were truly remarkable. From the beautifully appointed rooms to the impeccable housekeeping and the courteous concierge, your team's commitment to guest satisfaction was evident throughout. My stay was made all the more delightful thanks to your exceptional service
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                <h3 class="text-info">James</h3>
+                <h4 class="text-danger">Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 I wanted to express my heartfelt appreciation for the exceptional service I received during my stay at your hotel. The staff's professionalism, attention to detail, and genuine hospitality made my visit truly memorable. From the immaculate rooms to the delicious cuisine and the prompt assistance whenever I needed it, everything exceeded my expectations. Thank you for providing a top-notch experience that made my stay so enjoyable. I'll definitely be recommending your hotel to friends and family.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3 class="text-info">Wanyoike</h3>
+                <h4 class="text-danger">Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2 class="text-warning bg-danger lh-lg">Gallery</h2>
+          <p class="text-info">Some photos from Our Restaurant</p>
+        </div>
+      </div>
+       <div class="swiper-slide">
+           <div class="row event-item">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-0">
+          <div class="col-lg-3 col-md-4 ">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife1.jpg' %}" class="gallery-lightbox " data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife1.jpg' %}" alt="" class="img-fluid ">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife2.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife2.jpg' %}" alt="" class="img-fluid ">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife3.jpeg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife3.jpeg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife5.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife6.jpeg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife6.jpeg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife7.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife7.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife8.jpeg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife8.jpeg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/nightlife9.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'assets/img/gallery/nightlife9.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+       </div>
+       </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Chefs</h2>
+          <p>Our Proffesional Chefs</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="{% static 'assets/img/chefs/Samuel-kioko.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>CHEF samuel kioko</h4>
+                  <span class="text-info">Master Chef</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="{% static 'assets/img/chefs/Mohammed-chef.jpg' %}....>" class="" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4 class="text-danger">Mohammed </h4>
+                  <span>mixiologist</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="{% static 'assets/img/chefs/Kune-chef.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4 class="text-success">kuna mwaniki</h4>
+                  <span>Cook</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+               <p>Contact Us</p>
+          <p>manager</p>
+          <i class="bi bi-phone d-flex align-items-center text-primary" ><span class="text-primary lh-lg">+254 792124905 </span></i>
+          <img src="{% static 'assets/img/testimonials/isaac.jpg' %}" alt="" class="bg-success">
+
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.58272133764!2d37.32064806687489!3d-0.5663933862116148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182629b5a37f6381%3A0x859cebe37dc37639!2sKirinyaga%20University!5e0!3m2!1sen!2ske!4v1697018575198!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p class="text-info">KUTUS TOWN , KIRINYAGA COUNTY</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p class="text-success">
+                  Monday-Saturday:<br>
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4></div>
+                  <p>papagardens@gmail.com</p>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p class="text-danger">+2547 92124 905
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center text-success"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3 class="bg-info">papa gardens and restaurants </h3>
+              <p class="text-info">
+                KUTUS  <br>
+                KIRINYAGA COUNTY<br><br>
+                <strong>Phone:</strong> +254 7912 4905<br>
+                <strong>Email:</strong> papagardens@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Help</h4>
+            <ul>
+              <li class="text-info"><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li class="text-info"><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li class="text-info"><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li class="text-info"><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li class="text-info"><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li class="text-warning"><i class="bx bx-chevron-right"></i> <a href="#">outside catering</a></li>
+              <li class="text-warning"><i class="bx bx-chevron-right"></i> <a href="#">family parties</a></li>
+              <li class="text-warning"><i class="bx bx-chevron-right"></i> <a href="#">private  celebrations</a></li>
+              <li class="text-warning"><i class="bx bx-chevron-right"></i> <a href="#">baby showers</a></li>
+              <li class="text-warning"><i class="bx bx-chevron-right"></i> <a href="#">wedding parties</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4 class="text-danger">Our Newsletter</h4>
+            <p  class="text-danger">visit us and feel the vibe</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    Gallery Section -->
+
+
+    <div class="container">
+      <div class="copyright text-info">
+        &copy; Copyright <strong><span>papa gardens</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits text-info">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">fazaa web services </a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src=" {%  static 'assets/js/main.js'  %}"></script>
+
+</body>
+
+</html>
